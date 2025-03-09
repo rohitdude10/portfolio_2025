@@ -1,17 +1,27 @@
 /** @type {import('next').NextConfig} */
+const isGithubActions = process.env.GITHUB_ACTIONS || false;
+
+let assetPrefix = '';
+let basePath = '';
+
+if (isGithubActions) {
+  const repo = process.env.GITHUB_REPOSITORY.replace(/.*?\//, '');
+  assetPrefix = `/${repo}/`;
+  basePath = `/${repo}`;
+}
+
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
-  output: 'export',  // Required for static site generation
+  output: 'export',
   images: {
-    unoptimized: true,  // Required for static export
+    unoptimized: true,
+    loader: 'custom',
+    loaderFile: './image-loader.js',
   },
+  assetPrefix: assetPrefix,
+  basePath: basePath,
+  trailingSlash: true,
 };
-
-// Add basePath and assetPrefix only in production
-if (process.env.NODE_ENV === 'production') {
-  nextConfig.basePath = '/portfolio_2025';
-  nextConfig.assetPrefix = '/portfolio_2025/';
-}
 
 module.exports = nextConfig; 
