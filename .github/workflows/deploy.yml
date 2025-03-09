@@ -16,6 +16,7 @@ concurrency:
 
 env:
   NEXT_PUBLIC_BASE_PATH: /portfolio_2025
+  NODE_ENV: production
 
 jobs:
   build:
@@ -39,6 +40,7 @@ jobs:
         run: npm run build
         env:
           NEXT_PUBLIC_BASE_PATH: /portfolio_2025
+          NODE_ENV: production
           CI: false
       
       - name: Setup Pages
