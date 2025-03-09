@@ -61,7 +61,7 @@ const Hero = () => {
           >
             <div className="relative w-64 h-64 sm:w-80 sm:h-80 md:w-96 md:h-96 rounded-full overflow-hidden border-4 border-primary shadow-xl">
               <Image 
-                src="/profile_pic.jpg" 
+                src="/portfolio_2025/profile_pic.jpg"
                 alt="Rohit Kumar - Senior Software Engineer" 
                 fill
                 sizes="(max-width: 768px) 16rem, (max-width: 1024px) 20rem, 24rem"
