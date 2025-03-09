@@ -3,7 +3,6 @@
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { FaBars, FaTimes } from 'react-icons/fa';
-import { createPath } from '@/utils/routes';
 
 const Header = () => {
   const [nav, setNav] = useState(false);
@@ -36,7 +35,7 @@ const Header = () => {
       } transition-all duration-300`}
     >
       <div className="container flex justify-between items-center h-full px-4 2xl:px-16">
-        <Link href={createPath('/')}>
+        <Link href="/portfolio_2025/">
           <span className="text-2xl font-bold text-primary cursor-pointer">
             Portfolio
           </span>
@@ -44,19 +43,19 @@ const Header = () => {
         <div>
           <ul className="hidden md:flex">
             <li className="ml-10 text-sm uppercase hover:text-primary">
-              <Link href={createPath('/')}>Home</Link>
+              <Link href="/portfolio_2025/">Home</Link>
             </li>
             <li className="ml-10 text-sm uppercase hover:text-primary">
-              <Link href={createPath('/#about')}>About</Link>
+              <Link href="/portfolio_2025/#about">About</Link>
             </li>
             <li className="ml-10 text-sm uppercase hover:text-primary">
-              <Link href={createPath('/#skills')}>Skills</Link>
+              <Link href="/portfolio_2025/#skills">Skills</Link>
             </li>
             <li className="ml-10 text-sm uppercase hover:text-primary">
-              <Link href={createPath('/#projects')}>Projects</Link>
+              <Link href="/portfolio_2025/#projects">Projects</Link>
             </li>
             <li className="ml-10 text-sm uppercase hover:text-primary">
-              <Link href={createPath('/#contact')}>Contact</Link>
+              <Link href="/portfolio_2025/#contact">Contact</Link>
             </li>
           </ul>
           {/* Mobile Button */}
@@ -83,7 +82,7 @@ const Header = () => {
         >
           <div>
             <div className="flex w-full items-center justify-between">
-              <Link href={createPath('/')}>
+              <Link href="/portfolio_2025/">
                 <span className="text-2xl font-bold text-primary">
                   Portfolio
                 </span>
@@ -104,19 +103,19 @@ const Header = () => {
           <div className="py-4 flex flex-col">
             <ul className="uppercase">
               <li onClick={() => setNav(false)} className="py-4 text-sm">
-                <Link href={createPath('/')}>Home</Link>
+                <Link href="/portfolio_2025/">Home</Link>
               </li>
               <li onClick={() => setNav(false)} className="py-4 text-sm">
-                <Link href={createPath('/#about')}>About</Link>
+                <Link href="/portfolio_2025/#about">About</Link>
               </li>
               <li onClick={() => setNav(false)} className="py-4 text-sm">
-                <Link href={createPath('/#skills')}>Skills</Link>
+                <Link href="/portfolio_2025/#skills">Skills</Link>
               </li>
               <li onClick={() => setNav(false)} className="py-4 text-sm">
-                <Link href={createPath('/#projects')}>Projects</Link>
+                <Link href="/portfolio_2025/#projects">Projects</Link>
               </li>
               <li onClick={() => setNav(false)} className="py-4 text-sm">
-                <Link href={createPath('/#contact')}>Contact</Link>
+                <Link href="/portfolio_2025/#contact">Contact</Link>
               </li>
             </ul>
           </div>
