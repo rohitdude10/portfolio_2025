@@ -2,6 +2,7 @@
 
 import Link from 'next/link';
 import { FaGithub, FaLinkedinIn, FaTwitter } from 'react-icons/fa';
+import { createPath } from '@/utils/routes';
 
 const Footer = () => {
   return (
@@ -35,19 +36,19 @@ const Footer = () => {
             <h4 className="text-xl font-bold mb-4">Quick Links</h4>
             <ul className="space-y-2">
               <li className="hover:text-primary transition-colors">
-                <Link href="/portfolio_2025/">Home</Link>
+                <Link href={createPath('/')}>Home</Link>
               </li>
               <li className="hover:text-primary transition-colors">
-                <Link href="/portfolio_2025/#about">About</Link>
+                <Link href={createPath('/#about')}>About</Link>
               </li>
               <li className="hover:text-primary transition-colors">
-                <Link href="/portfolio_2025/#skills">Skills</Link>
+                <Link href={createPath('/#skills')}>Skills</Link>
               </li>
               <li className="hover:text-primary transition-colors">
-                <Link href="/portfolio_2025/#projects">Projects</Link>
+                <Link href={createPath('/#projects')}>Projects</Link>
               </li>
               <li className="hover:text-primary transition-colors">
-                <Link href="/portfolio_2025/#contact">Contact</Link>
+                <Link href={createPath('/#contact')}>Contact</Link>
               </li>
             </ul>
           </div>
