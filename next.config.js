@@ -1,22 +1,12 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
-  swcMinify: true,
   output: 'export',
   images: {
     unoptimized: true,
-    loader: 'custom',
-    loaderFile: './image-loader.js',
-    remotePatterns: [
-      {
-        protocol: 'https',
-        hostname: 'rohitdude10.github.io',
-      },
-    ],
   },
-  basePath: process.env.NEXT_PUBLIC_BASE_PATH || '',
-  assetPrefix: process.env.NEXT_PUBLIC_BASE_PATH || '',
-  trailingSlash: true,
+  basePath: process.env.NODE_ENV === 'production' ? '/portfolio_2025' : '',
+  assetPrefix: process.env.NODE_ENV === 'production' ? '/portfolio_2025/' : '',
 };
 
 module.exports = nextConfig; 
