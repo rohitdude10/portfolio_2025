@@ -5,8 +5,8 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  basePath: '/portfolio_2025',
-  assetPrefix: '/portfolio_2025/',
+  basePath: '/github-pages',
+  // assetPrefix: '/portfolio_2025/',
 };
 
 module.exports = nextConfig; 
