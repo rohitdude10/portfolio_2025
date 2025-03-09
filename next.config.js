@@ -7,8 +7,8 @@ const nextConfig = {
     unoptimized: true,  // Required for static export
     domains: ['localhost'],
   },
-  basePath: '/portfolio',  // Replace with your repository name
-  assetPrefix: '/portfolio/',  // Replace with your repository name
+  basePath: '/portfolio_2025',  // Updated repository name
+  assetPrefix: '/portfolio_2025/',  // Updated repository name
 };
 
 module.exports = nextConfig; 
