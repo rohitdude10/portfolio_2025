@@ -43,19 +43,19 @@ const Header = () => {
         <div>
           <ul className="hidden md:flex">
             <li className="ml-10 text-sm uppercase hover:text-primary">
-              <Link href="/portfolio_2025/">Home</Link>
+              <Link href="/">Home</Link>
             </li>
             <li className="ml-10 text-sm uppercase hover:text-primary">
-              <Link href="/portfolio_2025/#about">About</Link>
+              <Link href="/#about">About</Link>
             </li>
             <li className="ml-10 text-sm uppercase hover:text-primary">
-              <Link href="/portfolio_2025/#skills">Skills</Link>
+              <Link href="/#skills">Skills</Link>
             </li>
             <li className="ml-10 text-sm uppercase hover:text-primary">
-              <Link href="/portfolio_2025/#projects">Projects</Link>
+              <Link href="/#projects">Projects</Link>
             </li>
             <li className="ml-10 text-sm uppercase hover:text-primary">
-              <Link href="/portfolio_2025/#contact">Contact</Link>
+              <Link href="/#contact">Contact</Link>
             </li>
           </ul>
           {/* Mobile Button */}

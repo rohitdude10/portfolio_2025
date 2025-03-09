@@ -12,19 +12,19 @@ const Footer = () => {
             <h4 className="text-xl font-bold mb-4">Quick Links</h4>
             <ul className="space-y-2">
               <li className="hover:text-primary transition-colors">
-                <Link href="/portfolio_2025/">Home</Link>
+                <Link href="/">Home</Link>
               </li>
               <li className="hover:text-primary transition-colors">
-                <Link href="/portfolio_2025/#about">About</Link>
+                <Link href="#about">About</Link>
               </li>
               <li className="hover:text-primary transition-colors">
-                <Link href="/portfolio_2025/#skills">Skills</Link>
+                <Link href="#skills">Skills</Link>
               </li>
               <li className="hover:text-primary transition-colors">
-                <Link href="/portfolio_2025/#projects">Projects</Link>
+                <Link href="#projects">Projects</Link>
               </li>
               <li className="hover:text-primary transition-colors">
-                <Link href="/portfolio_2025/#contact">Contact</Link>
+                <Link href="#contact">Contact</Link>
               </li>
             </ul>
           </div>
