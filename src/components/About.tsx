@@ -31,7 +31,7 @@ const About = () => {
           >
             <div className="relative h-80 md:h-96 rounded-lg overflow-hidden shadow-xl">
               <Image 
-                src="/profile_pic.jpg" 
+                src="/portfolio_2025/profile_pic.jpg" 
                 alt="Rohit Kumar - Senior Software Engineer" 
                 fill
                 sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
