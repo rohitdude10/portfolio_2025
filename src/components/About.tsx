@@ -64,7 +64,7 @@ const About = () => {
                 <button className="btn-primary">Contact Me</button>
               </Link>
               <Link href="/resume.pdf" target="_blank" rel="noopener noreferrer">
-                <button className="btn-outline">Download Resume</button>
+                <button className="btn-outline">Download my Resume</button>
               </Link>
             </div>
           </motion.div>
