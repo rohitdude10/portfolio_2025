@@ -1,7 +1,7 @@
 "use client";
 
+import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
-import { useState, useEffect } from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa';
 
 const Header = () => {
@@ -43,16 +43,16 @@ const Header = () => {
         <div>
           <ul className="hidden md:flex">
             <li className="ml-10 text-sm uppercase hover:text-primary">
-              <Link href="/">Home</Link>
+              <Link href="/portfolio_2025/">Home</Link>
             </li>
             <li className="ml-10 text-sm uppercase hover:text-primary">
-              <Link href="/#about">About</Link>
+              <Link href="/portfolio_2025/#about">About</Link>
             </li>
             <li className="ml-10 text-sm uppercase hover:text-primary">
-              <Link href="/#skills">Skills</Link>
+              <Link href="/portfolio_2025/#skills">Skills</Link>
             </li>
             <li className="ml-10 text-sm uppercase hover:text-primary">
-              <Link href="/#projects">Projects</Link>
+              <Link href="/portfolio_2025/#projects">Projects</Link>
             </li>
             <li className="ml-10 text-sm uppercase hover:text-primary">
               <Link href="/portfolio_2025/#contact">Contact</Link>
@@ -103,19 +103,19 @@ const Header = () => {
           <div className="py-4 flex flex-col">
             <ul className="uppercase">
               <li onClick={() => setNav(false)} className="py-4 text-sm">
-                <Link href="/">Home</Link>
+                <Link href="/portfolio_2025/">Home</Link>
               </li>
               <li onClick={() => setNav(false)} className="py-4 text-sm">
-                <Link href="/#about">About</Link>
+                <Link href="/portfolio_2025/#about">About</Link>
               </li>
               <li onClick={() => setNav(false)} className="py-4 text-sm">
-                <Link href="/#skills">Skills</Link>
+                <Link href="/portfolio_2025/#skills">Skills</Link>
               </li>
               <li onClick={() => setNav(false)} className="py-4 text-sm">
-                <Link href="/#projects">Projects</Link>
+                <Link href="/portfolio_2025/#projects">Projects</Link>
               </li>
               <li onClick={() => setNav(false)} className="py-4 text-sm">
-                <Link href="/#contact">Contact</Link>
+                <Link href="/portfolio_2025/#contact">Contact</Link>
               </li>
             </ul>
           </div>
