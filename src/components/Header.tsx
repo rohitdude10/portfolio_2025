@@ -55,7 +55,7 @@ const Header = () => {
               <Link href="/#projects">Projects</Link>
             </li>
             <li className="ml-10 text-sm uppercase hover:text-primary">
-              <Link href="/#contact">Contact</Link>
+              <Link href="/portfolio_2025/#contact">Contact</Link>
             </li>
           </ul>
           {/* Mobile Button */}
