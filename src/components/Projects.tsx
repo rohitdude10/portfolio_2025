@@ -73,6 +73,13 @@ const Projects = () => {
       tags: ['Python', 'NLP', 'Document Processing', 'Data Extraction'],
       github: 'https://github.com/rohitdude10',
       demo: 'https://github.com/rohitdude10',
+    },
+    {
+      title: 'Amazon Product Price Tracker',
+      description: 'Amazon Product Price Tracker built using Python, Django, Nextjs and Django REST Framework. This application allows you to track prices of Amazon products over time',
+      tags: ['Python', 'Django', 'Nextjs', 'Web Scraping'],
+      github: 'https://github.com/rohitdude10/price_tracker',
+      demo: 'https://github.com/rohitdude10/price_tracker',
     }
    ];
 
