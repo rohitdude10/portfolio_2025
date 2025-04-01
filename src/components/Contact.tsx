@@ -21,23 +21,63 @@ const Contact = () => {
     setFormData((prev) => ({ ...prev, [name]: value }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
+    setSubmitStatus('');
+    setSubmitMessage('');
     
-    // Simulate form submission
-    setTimeout(() => {
+    try {
+      console.log('Sending request to API with data:', {
+        recipient_email: 'rohitkumardude10@gmail.com',
+        sender_name: formData.name,
+        sender_email: formData.email,
+        subject: formData.subject,
+        message: formData.message,
+      });
+
+      const apiUrl = `${process.env.NEXT_PUBLIC_API_HOST}/api/v1/send-project-inquiry`;
+      console.log('API URL:', apiUrl);
+
+      const response = await fetch(apiUrl, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Accept': 'application/json',
+        },
+        body: JSON.stringify({
+          recipient_email: 'rohitkumardude10@gmail.com',
+          sender_name: formData.name,
+          sender_email: formData.email,
+          subject: formData.subject,
+          message: formData.message,
+        }),
+      });
+
+      console.log('API Response status:', response.status);
+      const responseData = await response.json();
+      console.log('API Response data:', responseData);
+
+      if (response.ok) {
+        setSubmitStatus('success');
+        setSubmitMessage('Your message has been sent successfully! I will get back to you soon.');
+        setFormData({ name: '', email: '', subject: '', message: '' });
+      } else {
+        throw new Error(responseData.message || `Failed to send message: ${response.status}`);
+      }
+    } catch (error) {
+      console.error('API Error:', error);
+      setSubmitStatus('error');
+      setSubmitMessage(`Failed to send message: ${error instanceof Error ? error.message : 'Unknown error'}`);
+    } finally {
       setIsSubmitting(false);
-      setSubmitStatus('success');
-      setSubmitMessage('Your message has been sent successfully! I will get back to you soon.');
-      setFormData({ name: '', email: '', subject: '', message: '' });
       
-      // Clear success message after 5 seconds
+      // Clear status message after 5 seconds
       setTimeout(() => {
         setSubmitStatus('');
         setSubmitMessage('');
       }, 5000);
-    }, 1500);
+    }
   };
 
   const contactInfo = [
@@ -50,8 +90,8 @@ const Contact = () => {
     {
       icon: <FaPhone />,
       title: 'Phone',
-      content: '+91 8287546468',
-      link: 'tel:+918287546468',
+      content: '+91 828*******',
+      link: 'tel:+91828*******',
     },
     {
       icon: <FaMapMarkerAlt />,
