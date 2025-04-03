@@ -28,16 +28,16 @@ const Contact = () => {
     setSubmitMessage('');
     
     try {
-      console.log('Sending request to API with data:', {
-        recipient_email: 'rohitkumardude10@gmail.com',
-        sender_name: formData.name,
-        sender_email: formData.email,
-        subject: formData.subject,
-        message: formData.message,
-      });
+      // console.log('Sending request to API with data:', {
+      //   recipient_email: 'rohitkumardude10@gmail.com',
+      //   sender_name: formData.name,
+      //   sender_email: formData.email,
+      //   subject: formData.subject,
+      //   message: formData.message,
+      // });
 
       const apiUrl = `${process.env.NEXT_PUBLIC_API_HOST}/api/v1/send-project-inquiry`;
-      console.log('API URL:', apiUrl);
+      // console.log('API URL:', apiUrl);
 
       const response = await fetch(apiUrl, {
         method: 'POST',
@@ -54,9 +54,9 @@ const Contact = () => {
         }),
       });
 
-      console.log('API Response status:', response.status);
+      // console.log('API Response status:', response.status);
       const responseData = await response.json();
-      console.log('API Response data:', responseData);
+      // console.log('API Response data:', responseData);
 
       if (response.ok) {
         setSubmitStatus('success');
@@ -66,7 +66,7 @@ const Contact = () => {
         throw new Error(responseData.message || `Failed to send message: ${response.status}`);
       }
     } catch (error) {
-      console.error('API Error:', error);
+      // console.error('API Error:', error);
       setSubmitStatus('error');
       setSubmitMessage(`Failed to send message: ${error instanceof Error ? error.message : 'Unknown error'}`);
     } finally {
