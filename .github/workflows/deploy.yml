@@ -17,6 +17,7 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
+    environment: prod  # 👈 Ensures GitHub Envs are available
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -33,7 +34,8 @@ jobs:
         run: npm run build
         env:
           NODE_ENV: production
-      
+          NEXT_PUBLIC_API_HOST: ${{ secrets.NEXT_PUBLIC_API_HOST }}  # 👈 Injects env variable
+
       - name: Copy .nojekyll file
         run: |
           touch out/.nojekyll
@@ -53,4 +55,4 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v4 
+        uses: actions/deploy-pages@v4
