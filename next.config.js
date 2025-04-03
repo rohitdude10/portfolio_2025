@@ -8,6 +8,9 @@ const nextConfig = {
   basePath: '/portfolio_2025',
   assetPrefix: '/portfolio_2025/',
   trailingSlash: true,
+  env: {
+    NEXT_PUBLIC_API_HOST: process.env.NEXT_PUBLIC_API_HOST || 'https://your-default-api.com',
+  },
 };
 
-module.exports = nextConfig; 
+module.exports = nextConfig;
