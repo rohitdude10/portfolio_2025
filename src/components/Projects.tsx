@@ -80,6 +80,13 @@ const Projects = () => {
       tags: ['Python', 'Django', 'Nextjs', 'Web Scraping'],
       github: 'https://github.com/rohitdude10/price_tracker',
       demo: 'https://github.com/rohitdude10/price_tracker',
+    },
+    {
+      title: 'Birthday Buddy - Birthday Reminder Application',
+      description: 'A modern Flask web application to keep track of birthdays with user authentication and a clean, responsive UI',
+      tags: ['Python', 'Flask', 'HTML', 'CSS', 'JavaScript'],
+      github: 'https://github.com/rohitdude10/birthday_buddy',
+      demo: 'https://birthday-buddy-rh5o.onrender.com/',
     }
    ];
 
