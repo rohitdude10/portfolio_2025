@@ -46,9 +46,9 @@ const About = () => {
             transition={{ duration: 0.5, delay: 0.4 }}
             viewport={{ once: true }}
           >
-            <h3 className="mb-4">Senior Software Engineer with 5+ years of experience</h3>
+            <h3 className="mb-4">Senior Software Engineer with 6+ years of experience</h3>
             <p className="mb-4">
-              I am a Software Engineer based in Gurugram, India, with over 5 years of experience in developing robust data collection systems and building scalable web services using Python, Django, and Next.js.
+              I am a Software Engineer based in Gurugram, India, with over 6 years of experience in developing robust data collection systems and building scalable web services using Python, Django, and Next.js.
             </p>
             <p className="mb-4">
               Currently at Wood Mackenzie, I enhance data workflows and leverage AWS services like SageMaker, Lambda, and S3 to optimize data processing and accuracy.

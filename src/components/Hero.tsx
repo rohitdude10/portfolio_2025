@@ -24,7 +24,7 @@ const Hero = () => {
             </h1>
             <h1 className="py-2">A Senior Software Engineer</h1>
             <p className="py-4 max-w-lg">
-              With over 5 years of expertise in software engineering, I specialize in developing robust data collection systems, 
+              With over 6 years of expertise in software engineering, I specialize in developing robust data collection systems, 
               optimizing SEO characteristics, and building scalable web services and RESTful APIs using Python, Django, and Next.js.
             </p>
             <div className="flex items-center justify-start gap-4 py-4">
