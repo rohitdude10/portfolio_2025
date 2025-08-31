@@ -66,6 +66,7 @@ const NeuralNetworkBackground: React.FC = () => {
     canvas.height = h;
 
     function animate() {
+      if (!ctx) return;
       ctx.clearRect(0, 0, w, h);
       // Move nodes
       for (const node of nodesRef.current) {
