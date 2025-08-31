@@ -140,6 +140,7 @@ const NeuralNetworkBackground: React.FC = () => {
     const canvas = canvasRef.current;
     if (!canvas) return;
     function handleMove(e: MouseEvent) {
+      if (!canvas) return;
       const rect = canvas.getBoundingClientRect();
       const dpr = window.devicePixelRatio || 1;
       mouseRef.current.x = (e.clientX - rect.left) * dpr;
