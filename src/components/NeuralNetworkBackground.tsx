@@ -178,6 +178,7 @@ const NeuralNetworkBackground: React.FC = () => {
     const canvas = canvasRef.current;
     if (!canvas) return;
     function handleResize() {
+      if (!canvas) return;
       const dpr = window.devicePixelRatio || 1;
       canvas.width = canvas.offsetWidth * dpr;
       canvas.height = canvas.offsetHeight * dpr;
