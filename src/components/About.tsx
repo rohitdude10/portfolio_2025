@@ -46,15 +46,15 @@ const About = () => {
             transition={{ duration: 0.5, delay: 0.4 }}
             viewport={{ once: true }}
           >
-            <h3 className="mb-4">Senior Software Engineer with 6+ years of experience</h3>
+            <h3 className="mb-4">Senior Software Engineer with 7+ years of experience</h3>
             <p className="mb-4">
-              I am a Software Engineer based in Gurugram, India, with over 6 years of experience in developing robust data collection systems and building scalable web services using Python, Django, and Next.js.
+              I am a Senior Data & Backend Engineer based in Gurugram, India, with 7+ years of experience architecting high-throughput data pipelines, distributed cloud platforms, and scalable APIs using Python, Django, and FastAPI.
             </p>
             <p className="mb-4">
-              Currently at Wood Mackenzie, I enhance data workflows and leverage AWS services like SageMaker, Lambda, and S3 to optimize data processing and accuracy.
+              Currently at Wood Mackenzie, I optimize data workflows, automate complex ETL/ELT processes, and deploy production-grade machine learning models using AWS services such as SageMaker, Lambda, and S3. My expertise includes real-time data orchestration with Apache Airflow and Kafka, building resilient backend systems, and delivering low-latency analytics infrastructure for enterprise applications.
             </p>
             <p className="mb-4">
-              I am passionate about data engineering best practices, ensuring compliance and security while collaborating with cross-functional teams to deliver high-quality solutions.
+              I also leverage AI-powered engineering tools such as GitHub Copilot, Kiro, and Cursor to accelerate development, automate scraper creation, and streamline pipeline debugging. Passionate about scalable system design, data engineering best practices, and cloud-native technologies, I continuously explore innovative approaches to building secure, reliable, and high-performance data platforms.
             </p>
             <p className="mb-6">
               I continuously seek to expand my knowledge in emerging technologies, currently exploring machine learning integration into our data pipelines for predictive analytics.
