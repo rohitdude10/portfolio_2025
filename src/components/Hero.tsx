@@ -24,8 +24,7 @@ const Hero = () => {
             </h1>
             <h1 className="py-2">A Senior Software Engineer</h1>
             <p className="py-4 max-w-lg">
-              With over 6 years of expertise in software engineering, I specialize in developing robust data collection systems, 
-              optimizing SEO characteristics, and building scalable web services and RESTful APIs using Python, Django, and Next.js.
+              With over 7 years of experience in software engineering, I specialize in architecting high-throughput data pipelines, building scalable backend systems, and developing resilient RESTful APIs using Python, Django, and FastAPI. My expertise spans ETL/ELT automation, real-time data orchestration with Apache Airflow and Kafka, cloud-native solutions on AWS, and AI-assisted engineering to accelerate development and optimize enterprise-scale data platforms.
             </p>
             <div className="flex items-center justify-start gap-4 py-4">
               <Link href="/#contact">
